@@ -1,1 +1,4 @@
-<p>todo-item works!</p>
+<li>
+    <input id="todo-{{ todo().id }}" type="checkbox" [checked]="todo().completed" />
+    <label [class.completed]="todo().completed" for="todo-{{ todo().id }}">{{ todo().title }}</label>
+</li>

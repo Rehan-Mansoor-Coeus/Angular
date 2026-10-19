@@ -1,8 +1,5 @@
 <ul>
     @for (item of todoItems(); track $index) {     
-        <li>
-            <input id="todo-{{ $index }}" type="checkbox" [checked]="item.completed" />
-            <label [class.completed]="item.completed" for="todo-{{ $index }}">{{ item.title }}</label>
-        </li>
+        <app-todo-item [todo]="item" />
     }
 </ul>

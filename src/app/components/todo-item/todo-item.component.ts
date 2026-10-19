@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { Todo } from '../../model/todo.type';
 
 @Component({
   selector: 'app-todo-item',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./todo-item.component.css']
 })
 export class TodoItemComponent {
-
+    todo = input.required<Todo>();
 }
