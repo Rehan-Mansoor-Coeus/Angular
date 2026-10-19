@@ -2,9 +2,11 @@ import { Component, inject, signal, OnInit } from '@angular/core';
 import { TodoService } from '../../service/todo.service';
 import { Todo } from '../../model/todo.type';
 import { catchError } from 'rxjs';
+import { TodoItemComponent } from '../todo-item/todo-item.component';
 
 @Component({
   selector: 'app-todo',
+  imports: [TodoItemComponent],
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.css']
 })
