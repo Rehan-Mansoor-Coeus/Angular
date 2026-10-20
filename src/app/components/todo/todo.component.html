@@ -1,3 +1,7 @@
+@if (todoItems().length === 0) {
+    <p>No todo items available.</p>
+}
+
 <ul>
     @for (item of todoItems(); track $index) {     
         <app-todo-item [todo]="item" />

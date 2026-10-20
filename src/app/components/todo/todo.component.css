@@ -7,7 +7,3 @@ li{
     align-items: center;
     margin-bottom: 10px;
 }
-.completed{
-    text-decoration: line-through;
-    color: gray;
-}
